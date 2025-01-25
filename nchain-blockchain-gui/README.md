@@ -1,12 +1,10 @@
 # nchain-blockchain-gui
 
-![Chia logo](https://www.chia.net/wp-content/uploads/2022/09/chia-logo.svg)
+![Nchain logo](packages/gui/src/assets/img/nchain_logo.svg)
 
-![GitHub contributors](https://img.shields.io/github/contributors/Chia-Network/nchain-blockchain-gui?logo=GitHub)
+Welcome to the NChain GUI repo!
 
-Welcome to the Chia GUI repo!
-
-Chia GUI is written in TypeScript and uses Electron/React.
+NChain GUI is written in TypeScript and uses Electron/React.
 
 This monorepo consists of the following packages:
 
@@ -16,7 +14,7 @@ This monorepo consists of the following packages:
 | **api-react** | React library that wraps **api** in hooks                                                                  |
 | **core**      | Common React components and hooks                                                                          |
 | **gui**       | The actual GUI package. It uses our packages like **api-react** and **core** under the hood                |
-| **icons**     | Chia specific icons                                                                                        |
+| **icons**     | NChain specific icons                                                                                        |
 | **wallets**   | Common React components and hooks. Do not use this in you project. Will be merged to **core** package soon |
 
 ## Development
@@ -120,7 +118,7 @@ Do not edit files directly in the repo, but instead please head over to our [Cro
   2. Run `. ./activate`
   3. Run `cd nchain-blockchain-gui`
   4. Run `npm run dev:gui` to start the app.
-  5. If still does not work, please open you process manager and kill all Chia / Python related processes.
+  5. If still does not work, please open you process manager and kill all NChain / Python related processes.
 
 - **Why does my component keep rerendering?**
 
@@ -136,7 +134,7 @@ Do not edit files directly in the repo, but instead please head over to our [Cro
 
 ## Debugging
 
-1. In the Chia Electron app, click `View -> Developer -> Developer tools`.
+1. In the NChain Electron app, click `View -> Developer -> Developer tools`.
 2. In the console tab of the developer tools, change the default console events to include `verbose` events. These are the events emitted from the `debug` package.
 
 ## Simulator / SimNet
@@ -157,7 +155,7 @@ export NCHAIN_KEYS_ROOT=~/.nchain_keys_simulator
 7. You should see your simulator wallets. You should not see your testNet / mainNet wallets.
 8. Run `nchain dev sim farm` as many times you want to farm some coins.
 
-## Chia FAQ/WIKI
+## NChain FAQ/WIKI
 
 Please check out the [wiki](https://github.com/blockchiansea/nchain-blockchain/wiki)
 and [FAQ](https://github.com/blockchiansea/nchain-blockchain/wiki/FAQ) for

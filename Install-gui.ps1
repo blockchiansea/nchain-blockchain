@@ -1,5 +1,4 @@
 $ErrorActionPreference = "Stop"
-$SUBMODULE_BRANCH = $args[0]
 
 if ($null -eq (Get-ChildItem env:VIRTUAL_ENV -ErrorAction SilentlyContinue))
 {
@@ -14,7 +13,7 @@ if ($null -eq (Get-Command node -ErrorAction SilentlyContinue))
     Exit 1
 }
 
-Write-Output "Running 'git submodule update --init --recursive'."
+Write-Output "Building the NChain GUI."
 Write-Output ""
 
 
@@ -26,6 +25,7 @@ try {
     npm ci --loglevel=error
     npm audit fix
     npm run build
+    py ..\installhelper.py
 
     Write-Output ""
     Write-Output "NChain blockchain Install-gui.ps1 completed."

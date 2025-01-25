@@ -1,10 +1,6 @@
 # nchain-blockchain
 
-[![Chia Network logo][logo-chia]][link-chia]
-
-| Releases                                                                                                                                        | Repo Stats                                                                                                                                                                                                           | Socials                                                                                                                                                                                   |
-| ----------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [![Latest Release][badge-release]][link-latest] <br /> [![Latest RC][badge-rc]][link-release] <br /> [![Latest Beta][badge-beta]][link-release] | [![Coverage][badge-coverage]][link-coverage] <br /> [![Downloads][badge-downloads]][link-downloads] <br /> [![Commits][badge-commits]][link-commits] <br /> [![Contributers][badge-contributers]][link-contributers] | [![Discord][badge-discord]][link-discord] <br /> [![YouTube][badge-youtube]][link-youtube] <br /> [![Reddit][badge-reddit]][link-reddit] <br /> [![Twitter][badge-twitter]][link-twitter] |
+[![NChain Network logo][logo-nchain]][link-nchain]
 
 NChain is a modern cryptocurrency built from scratch, designed to be efficient, decentralized, and secure. Here are some of the features and benefits:
 
@@ -18,12 +14,12 @@ NChain is a modern cryptocurrency built from scratch, designed to be efficient, 
 - Support for light clients with fast, objective syncing
 - A growing community of farmers and developers around the world
 
-Please check out the [Chia website][link-chia], the [Intro to Chia][link-intro], and [FAQ][link-faq] for information on this project.
+Please check out the [NChain website][link-nchain], the [Intro to Chia][link-intro], and [FAQ][link-faq] for information on this project.
 
 Python 3.8.1+ is required. Make sure your default python version is >=3.8.1 by typing `python3`.
 
 If you are behind a NAT, it can be difficult for peers outside your subnet to reach you when they start up. You can enable [UPnP][link-upnp]
-on your router or add a NAT (fo[README.md](..%2Fnchain-blockchain-1.6.1%2FREADME.md)r IPv4 but not IPv6) and firewall rules to allow TCP port 58445 access to your peer.
+on your router or add a NAT (fo[README.md](README.md)r IPv4 but not IPv6) and firewall rules to allow TCP port 58445 access to your peer.
 These methods tend to be router make/model specific.
 
 Most users should only install harvesters, farmers, plotter, full nodes, and wallets.
@@ -52,7 +48,7 @@ Once installed, an [Intro to Chia][link-intro] guide is available in the [Chia D
 [badge-release]: https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fdownload.chia.net%2Flatest%2Fbadge-data.json&query=%24.message&logo=chianetwork&label=Latest%20Release&labelColor=%231e2b2e&color=%230d3349
 [badge-twitter]: https://img.shields.io/twitter/follow/chia_project?style=flat-square&logo=x.org&logoColor=white&labelColor=black
 [badge-youtube]: https://img.shields.io/youtube/channel/subscribers/UChFkJ3OAUvnHZdiQISWdWPA?style=flat-square&logo=youtube&logoColor=%23ff0000&labelColor=%230f0f0f&color=%23272727
-[link-chia]: https://www.chia.net/
+[link-nchain]: https://www.ext9.org/
 [link-chialisp]: https://chialisp.com/
 [link-commits]: https://github.com/blockchiansea/nchain-blockchain/commits/main/
 [link-consensus]: https://docs.chia.net/consensus-intro/
@@ -72,4 +68,4 @@ Once installed, an [Intro to Chia][link-intro] guide is available in the [Chia D
 [link-twitter]: https://twitter.com/chia_project
 [link-upnp]: https://www.homenethowto.com/ports-and-nat/upnp-automatic-port-forward/
 [link-youtube]: https://www.youtube.com/chianetwork
-[logo-chia]: nchain-blockchain-gui/packages/icons/src/images/nchain.svg "NChain logo"
+[logo-nchain]: nchain-blockchain-gui/packages/gui/src/assets/img/nchain_logo.svg "NChain logo"

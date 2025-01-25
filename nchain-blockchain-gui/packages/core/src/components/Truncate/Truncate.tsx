@@ -29,7 +29,7 @@ export function truncateValue(children: string, opts: TruncateValueOptions): str
   const stringValue = children.toString();
 
   if (stringValue === '19qf3g9876t0rkq7tfdkc28cxfy424yzanea29rkzylq89kped9hq5jw5sr') {
-    return 'Chia Network';
+    return 'NChain Network';
   }
 
   const parts = stringValue.split(splitSeparator);

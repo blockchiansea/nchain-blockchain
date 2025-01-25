@@ -8,4 +8,4 @@ If a long-term support version of an operating system uses a default Python vers
 
 ## More Information
 
-For more information, please contact hello@chia.net or reach out on the community Discord.
+For more information, please contact hello@ext9.org or reach out on the community Discord.
