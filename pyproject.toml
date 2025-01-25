@@ -3,7 +3,7 @@ name = "nchain-blockchain"
 # see [tool.poetry-dynamic-versioning]
 version = "2.5.0"
 description = "NChain blockchain full node, farmer, timelord, and wallet."
-authors = ["hello@ext9.org"]
+authors = ["Hello <hello@ext9.org>"]
 license = "Apache License"
 readme = "README.md"
 keywords= ["nchain", "ext9", "blockchain", "node"]
