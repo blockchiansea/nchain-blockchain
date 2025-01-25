@@ -1,0 +1,17 @@
+[Unit]
+Description=NChain Wallet Service for %i
+Requires=nchain-daemon@%i.service
+After=nchain-daemon@%i.service
+
+[Service]
+Type=simple
+Environment=NCHAIN_ROOT=/home/%i/.nchain/ext9
+ExecStart=/opt/nchain/nchain_wallet
+ExecStartPost=/bin/bash -c '(while ! nc -z -v -w1 localhost 39256 2>/dev/null; do echo "Waiting for the wallet to listen on port 39256..."; sleep 1; done); sleep 1'
+User=%i
+Group=%i
+LimitNOFILE=1048576
+LimitNPROC=1048576
+
+[Install]
+WantedBy=multi-user.target

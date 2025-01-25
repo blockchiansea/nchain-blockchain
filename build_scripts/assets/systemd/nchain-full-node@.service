@@ -1,0 +1,16 @@
+[Unit]
+Description=NChain Full Node Service for %i
+Requires=nchain-daemon@%i.service
+After=nchain-daemon@%i.service
+
+[Service]
+Type=simple
+Environment=NCHAIN_ROOT=/home/%i/.nchain/ext9
+ExecStart=/opt/nchain/nchain_full_node
+User=%i
+Group=%i
+LimitNOFILE=1048576
+LimitNPROC=1048576
+
+[Install]
+WantedBy=multi-user.target

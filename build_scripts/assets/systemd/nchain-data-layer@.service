@@ -1,0 +1,17 @@
+[Unit]
+Description=NChain Data Layer Service for %i
+Requires=nchain-daemon@%i.service
+After=nchain-daemon@%i.service
+
+[Service]
+Type=simple
+Environment=NCHAIN_ROOT=/home/%i/.nchain/ext9
+ExecStart=/opt/nchain/nchain_data_layer
+User=%i
+Group=%i
+LimitNOFILE=1048576
+LimitNPROC=1048576
+TimeoutStopSec=15
+
+[Install]
+WantedBy=multi-user.target
